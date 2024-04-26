@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    body {
+        @apply md:mx-16 lg:mx-24 xl:mx-36
+    }
+
+
+    h1, h2, h3, h4, h5, h6 {
+        @apply text-black font-pacifico
+    }
+    
+    p, li {
+        @apply text-black font-dancing-script
+    }
+
+    a, button {
+        @apply font-caveat text-white;
+    }
+
+}
+
+@layer components {
+
+    .container-margin {
+        @apply mt-[72px] mb-4
+    }
+
+    .nav-bar {
+        @apply md:rounded-bl-sm md:rounded-br-sm md:mx-16 lg:mx-24 xl:mx-36
+    }
+
+    .nav-bar-text {
+        @apply font-lobster text-[21px] text-white;
+    }
+
+    .background {
+        @apply h-full w-full inset-0 fixed object-cover -z-50 object-center
+    }
+
+    .home-title-text {
+        @apply text-white bg-text-text-shadow text-center text-[27px] ss:text-[30px] md:text-[32px]
+    }
+
+    .title-text {
+        @apply text-[26px] font-extrabold
+    }
+
+    .sub-title-text {
+        @apply text-[22px] font-bold
+    }
+
+    .home-subject-text {
+        @apply bg-white max-w-[700px] py-5 px-1 ss:px-1.5 rounded-lg text-center text-[17px] ss:text-[20px] md:text-[22px]
+    }
+
+    .subject-text {
+        @apply text-[18px]
+    }
+
+    .bg-text-text-shadow {
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .rounded-button {
+        @apply py-1.5 px-5 font-bold rounded-full w-max h-max text-center text-[17px] bg-primary-color hover:bg-primary-color-dark
+    }
+
+    .rounded-button-full-w {
+        @apply w-[50%] xs:w-[40%] ss:w-[30%] sm:w-[27%] md:w-[25%] rounded-button
+    }
+
+    .soup-card-items-container {
+        @apply border-[1px] border-primary-color w-max m-auto grid grid-cols-1 ss:grid-cols-2 md:grid-cols-3 gap-3 p-5 rounded-md
+    }
+
+    .soup-card-item {
+        @apply relative rounded-sm w-[250px] h-[170px] sm:w-[300px] sm:h-[220px] md:w-[280px] md:h-[200px] lg:w-[300px] lg:h-[220px]
+    }
+
+    .soup-card-image {
+        @apply w-full h-full rounded-sm object-cover
+    }
+
+    .soup-card-item-title-background {
+        @apply bg-white flex items-center justify-between rounded-tl-md rounded-tr-md p-2 hover:bg-gray-300 cursor-pointer
+    }
+    
+    .soup-card-item-title-text {
+        @apply text-[15px] ss:text-[16px] md:text-[17px]
+    }
+
+    .icon-image {
+        @apply w-[25px] h-[25px] object-contain
+    }
+
+    .search-error-image {
+        @apply w-[150px] h-[150px] object-contain
+    }
+
+    .large-image {
+        @apply w-[300px] h-[200px] xs:w-[350px] xs:h-[250px] ss:w-[400px] ss:h-[300px] sm:w-[450px] sm:h-[350px] md:w-[500px] md:h-[400px] lg:w-[550px] lg:h-[450px] rounded-md object-cover
+    }
+
+    .soup-button {
+        @apply flex items-center justify-center px-3 py-2 rounded-xl text-[15px] w-max h-max cursor-pointer bg-white text-primary-color hover:bg-green-100 hover:text-primary-color-dark
+    }
+
+    .soup-button-icon {
+        @apply w-[20px] h-[20px] object-contain
+    }
+
+}
